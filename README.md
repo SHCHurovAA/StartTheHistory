@@ -1,4 +1,4 @@
-# Верстка лендинга (StartTheHistory)[https://shchurovaa.github.io/StartTheHistory/]: курсы инвестора
+# Верстка лендинга [StartTheHistory](https://shchurovaa.github.io/StartTheHistory/): курсы инвестора
 
 Всем привет!
 
