@@ -7,10 +7,12 @@ const modalCloseButton = modal.querySelector('button');
 */
 function openModal() {
     modal.classList.add('modal--open');
+    document.body.classList.add('no-scroll');
 }
 
 function closeModal() {
     modal.classList.remove('modal--open');
+    document.body.classList.remove('no-scroll');
 }
 
 

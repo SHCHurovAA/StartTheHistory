@@ -250,6 +250,10 @@ h2 {
   display: none;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 /* blocks */
 .menu-nav {
   position: absolute;
@@ -1721,7 +1725,6 @@ a.button-blue:active {
   color: #fff;
   background-color: #222222;
   position: relative;
-  top: -1px;
 }
 @media (min-width: 599px) {
   .cta {
@@ -1747,7 +1750,6 @@ a.button-blue:active {
 
 .service-offer {
   position: relative;
-  top: -2px;
   padding: 38px 0 50px;
   background-color: #222222;
 }
@@ -2092,7 +2094,7 @@ input.service-offer__form-btn:focus, input.service-offer__form-btn:hover {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
