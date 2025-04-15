@@ -1,0 +1,41 @@
+.about {
+    padding: 68px 0 80px;
+    background-color: #F5F5F5;
+
+    @include tablet {
+        padding: 96px 0 126px;
+    }
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include tablet {
+        gap: 53px;
+    }
+}
+
+.about__trust-reasons-list {
+    display: grid;
+    gap: 30px;
+
+    /* 
+        Desktop версия
+    */
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 0;
+    }
+}
+
+
+.about__button-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+.product-creation-info {
+    padding: 31px 0 57px;
+
+    @include desktop {
+        padding: 50px 0 82px;
+    }
+}
+
+.product-creation-info__wrapper {
+    display: grid;
+    gap: 57px;
+
+    @include desktop {
+        gap: 89px;
+    }
+}
+
+.product-creation-info__timeline {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+
+    position: relative;
+
+    /* 
+        МОБИЛЬНАЯ ВЕРСИЯ
+        Линия справа по вертикали
+    */
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 20px;
+        right: 9px;
+        width: 2px;
+        height: 93%;
+        background-color: #A1A1A1;
+
+        z-index: 1;
+    }
+
+    /* 
+        ДЕСКТОП
+        Линии по горизонтали
+    */
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 100px;
+        column-gap: unset;
+
+        &::after {
+            width: 100%;
+            height: 2px;
+            top: calc(50% + 20px);
+            right: unset;
+
+        }
+    }
+}
+
+.product-creation-info__point {
+
+    padding-right: 28px;
+
+    line-height: 1.3;
+
+    p {
+        margin-top: 0;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    position: relative;
+
+    /* 
+        МОБИЛЬНАЯ ВЕРСИЯ
+        Точки на линии справа.
+    */
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--primary);
+
+        z-index: 2;
+    }
+
+    /* 
+        ДЕСКТОП
+        Точки на линии слева с начала линии
+    */
+    @include desktop {
+        &::after {
+            top: unset;
+            right: unset;
+        }
+
+        &:nth-child(1n)::after {
+            bottom: -70px;
+        }
+
+        &:nth-child(2n)::after {
+            top: -50px;
+        }
+    }
+}
+
+@include desktop {
+
+    // верхняя линия
+    .order-top {
+        order: 1;
+        margin-right: 30%;
+        align-self: flex-end;
+    }
+
+    // нижняя линия
+    .order-bottom {
+        order: 2;
+        margin-left: 30%;
+        align-self: flex-start;
+    }
+}

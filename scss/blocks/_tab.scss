@@ -1,0 +1,76 @@
+.tab {}
+
+.sales__reason-tab {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tab__tabs-menu {
+    background-color: #fff;
+    border-bottom-left-radius: 9px;
+
+    @include tablet {}
+
+
+}
+
+.tab__tab {
+    width: 126px;
+    padding-left: 40px;
+    padding-top: 3px;
+
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: -0.03em;
+    color: #fff;
+
+    background-image: url('./../img/svg/tab-bg.svg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    left: -1px;
+
+    @include tablet {
+        width: 223px;
+        padding-left: 69px;
+        padding-top: 9px;
+
+        font-size: 18px;
+        font-family: var(--font3);
+    }
+
+}
+
+.tab__bg {
+    flex: 1;
+
+    padding-top: 2px;
+    background-color: var(--primary);
+    border-radius: 9px;
+    border-top-left-radius: unset;
+
+    position: relative;
+    z-index: 0;
+
+    @include tablet {
+        border-radius: 16px;
+        border-top-left-radius: unset;
+    }
+}
+
+.tab__body {
+    padding: 5px;
+    height: 100%;
+
+    border: 2px solid #c6c6c6;
+    border-radius: 9px;
+    background-color: #eaebed;
+
+    @include tablet {
+        border-radius: 16px;
+    }
+}

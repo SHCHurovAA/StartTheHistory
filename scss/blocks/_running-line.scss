@@ -1,0 +1,51 @@
+.running-line {
+    padding: 18px 0;
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+}
+
+.running-line__in {
+    display: flex;
+    width: fit-content;
+    animation: startLine 15s linear infinite, marquee 15s linear infinite;
+}
+
+.running-line__item {
+    display: inline-flex;
+    align-items: center;
+    width: max-content;
+    white-space: nowrap;
+    padding-left: 25px;
+
+    span {
+        margin-left: 25px;
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    img {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+@keyframes startLine {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

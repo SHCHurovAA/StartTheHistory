@@ -1,0 +1,119 @@
+.trust-reasons-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 27px 28px;
+    background-color: #fff;
+
+    border-radius: 20px;
+
+    /* 
+        Десктоп версия.
+    */
+    @include desktop {
+        background-color: unset;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    /* 
+        Модификатор для карточки с картинкой.
+        Если карточка с картинкой внизу, убираем нижний паддинг.
+    */
+    &--pb0 {
+        padding-bottom: 0;
+    }
+
+    /* 
+        Десктопная версия для карточки с картинкой: убираем картинку
+    */
+    &--no-img {
+        @include desktop {
+            padding-bottom: 28px;
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    /* 
+        Для карточки с только картинкой, добавляем фон. И делаем
+        видимой только на десктопе.
+    */
+    &--only-img {
+        display: none;
+
+        @include desktop {
+            display: block;
+            background-color: #fff;
+        }
+
+    }
+
+}
+
+.trust-reasons-card__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: #f5f5f5;
+
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--primary);
+
+    @include desktop {
+        background-color: #fff;
+    }
+}
+
+.trust-reasons-card__header {
+    margin-top: 12px;
+}
+
+.trust-reasons-card__text {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+
+    @include desktop {
+        margin-top: 7px;
+    }
+}
+
+.trust-reasons-card__img {
+    margin-top: 34px;
+}
+
+@include desktop {
+    .trust-reasons-card--only-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .trust-reasons-card__img {
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.trust-reasons-card__img--brokerage-account-rules {
+
+    height: fit-content;
+    align-self: center;
+
+    img {
+        width: 231px !important;
+        height: 101px !important;
+    }
+}

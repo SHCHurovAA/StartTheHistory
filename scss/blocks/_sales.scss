@@ -1,0 +1,156 @@
+.sales {
+    padding: 74px 0 32px;
+
+    @include tablet {
+        padding: 94px 0 130px;
+    }
+}
+
+.sales__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+
+}
+
+.sales__reasons-wrapper {
+    display: grid;
+
+    @include desktop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.sales__reasons-list-wrapper {
+    @include desktop {
+        padding-top: 31px;
+    }
+}
+
+.sales__reasons-list {
+    border: 2px solid #dadada;
+    border-radius: 9px;
+    padding: 20px 15px;
+
+    @include tablet {
+        padding: 34px 76px 22px 58px;
+    }
+}
+
+.sales__reasons {
+
+    display: grid;
+    grid-template-columns: 23px 1fr;
+    column-gap: 17px;
+    align-items: center;
+
+    padding: 22px 0;
+
+    // Убираем паддинг сверху для первого элемента списка
+    &:first-child {
+        padding-top: unset;
+    }
+
+    // Убираем паддинг снизу для последнего элемента списка
+    &:last-child {
+        padding-bottom: unset;
+    }
+
+    border-bottom: 1px solid #dadada;
+
+    // Убираем границу для последнего пункта.
+    &:last-child {
+        border-bottom: unset;
+    }
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+
+    span {
+        font-weight: 600;
+    }
+
+    @include tablet {
+        grid-template-columns: 40px 1fr;
+        column-gap: 35px;
+        padding: 30px 0;
+        font-size: 18px;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+}
+
+.sales__reasons-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: var(--primary);
+
+    img {
+        width: 12px;
+        height: 12px;
+    }
+
+    @include tablet {
+        width: 40px;
+        height: 40px;
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
+.sales__tab-body {
+
+    padding: 50px 35px;
+
+    @include tablet {
+        padding: 25px 35px;
+    }
+
+    @include desktop {
+        padding: 83px 85px 83px;
+    }
+
+    .divider {
+        margin-top: 15px;
+
+        @include tablet {
+            margin: 75px 0 45px;
+        }
+    }
+}
+
+.sales__text {
+    padding: 22px 13px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #000;
+
+    span {
+        font-weight: 600;
+    }
+
+    @include tablet {
+        padding: 30px 26px;
+    }
+}
+
+.sales__text--card-type {
+    line-height: 1.25;
+    color: #131313;
+    background-color: #fff;
+    border-radius: 10px;
+}

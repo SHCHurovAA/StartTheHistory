@@ -1,0 +1,29 @@
+.header {
+    padding: 53px 0;
+
+    background: #000;
+    color: #fff;
+
+    @include tablet {
+        padding: 38px 0;
+    }
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+        font-family: var(--third-family);
+        font-size: 20px;
+    }
+}
+
+
+.header__menu-burger {}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10mm"
+   height="40mm"
+   viewBox="0 0 10 40"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="wave.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <path
+     style="fill:none;stroke:#a1a1a1;stroke-width:0.541204;stroke-dasharray:none;stroke-opacity:1"
+     d="M 4.9593208,0.06612428 C 3.2567863,1.0435999 1.8474642,2.5245643 0.95553954,4.2734362 0.06361492,6.0223081 -0.30764627,8.0326836 -0.09918642,9.9847663 0.10127028,11.861905 0.82180794,13.653101 1.7596133,15.2915 c 0.9378053,1.6384 2.092233,3.14064 3.2327699,4.64497 1.1453102,1.510626 2.2843961,3.035156 3.2002491,4.694957 0.9158529,1.659801 1.6070126,3.469282 1.792134,5.355934 0.1925157,1.962009 -0.177308,3.976024 -1.0543096,5.741643 -0.8770016,1.76562 -2.2583724,3.277188 -3.9380735,4.309248"
+     id="path4"
+     inkscape:path-effect="#path-effect5"
+     inkscape:original-d="M 4.9593208,0.06612428 C 4.9483001,-13.257918 1.575962,6.64549 -0.09918642,9.9847663 -1.7743348,13.324042 3.3172347,16.641277 4.9923832,19.93647 c 1.6751482,3.295194 3.3282553,6.700594 4.9923831,10.050891 1.6641277,3.350297 -3.3282556,6.700594 -4.9923831,10.050891"
+     transform="matrix(0.92432403,0,0,1.0003294,0.46715798,-0.10581655)" />
+</svg>

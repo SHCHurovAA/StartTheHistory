@@ -1,0 +1,40 @@
+.container {
+    width: var(--container-width);
+    padding: 0 var(--container-padding-x);
+    margin: 0 auto;
+
+    @include tablet {
+        width: 100%;
+        max-width: var(--container-width-tablet);
+        padding: 0 var(--container-padding-tablet-x);
+    }
+
+    @include desktop {
+        max-width: var(--container-width-desktop);
+        padding: 0 var(--container-padding-desktop-x);
+    }
+}
+
+.container-full {
+    width: 100%;
+    padding: 0 var(--container-padding-x);
+
+    @include tablet {
+        padding: 0 var(--container-padding-tablet-x);
+    }
+
+    @include desktop {
+        padding: 0 var(--container-padding-desktop-x);
+    }
+
+    &--px-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-right {
+    @include desktop {
+        padding-left: calc((100% - var(--container-width-desktop)) / 2 + var(--container-padding-desktop-x));
+    }
+}

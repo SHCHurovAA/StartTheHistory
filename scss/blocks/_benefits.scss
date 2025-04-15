@@ -1,0 +1,70 @@
+.benefits {
+    padding: 81px 0 116px;
+    background-color: #222222;
+
+    .title-2 {
+        color: #fff;
+    }
+
+    @include desktop {
+        padding: 101px 0 141px;
+    }
+}
+
+.benefits__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+
+    @include desktop {
+        gap: 52px;
+    }
+}
+
+.benefits__card-list {
+    display: grid;
+    gap: 20px;
+
+
+    /* 
+        Разметка карточек на планшетах.
+        Отдельные правила.
+    */
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+
+        .benefits__card-full {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    /* 
+        Разметка карточек на десктопе.
+        Отдельные правила.
+    */
+    @include desktop {
+        grid-template-columns: repeat(4, 1fr);
+
+        .benefits__card-full {
+            grid-column: unset;
+        }
+
+        .benefits__card-desktop-square {
+            grid-column: 2 / 4;
+            grid-row: 1 / 3;
+
+            img {
+                width: 539px;
+                height: 305px;
+            }
+        }
+
+        .benefits__card-desktop-full {
+            grid-column: 1 / span 4;
+
+            padding: 44px 144px;
+            flex-direction: row;
+            min-height: unset;
+        }
+    }
+}

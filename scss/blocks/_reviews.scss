@@ -1,0 +1,116 @@
+.reviews {
+    padding: 63px 0 79px;
+
+    @include desktop {
+        padding: 73px 0 117px;
+    }
+}
+
+.reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.reviews__text-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    @include desktop {
+        margin-top: 21px;
+    }
+}
+
+.reviews__subtitle {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 16px;
+    color: #747474;
+
+    &:after {
+        content: "";
+
+        margin-top: 31px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #eaebed;
+        background-image: url('./../img/svg/swap-hand.svg');
+        background-position: center center;
+        background-size: 23px 26px;
+        background-repeat: no-repeat;
+    }
+
+    @include desktop {
+        max-width: 700px;
+        font-size: 20px;
+
+        &:after {
+            left: unset;
+            transform: unset;
+            margin-top: unset;
+
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+}
+
+.reviews__review-list {
+    margin-top: 32px;
+
+    display: flex;
+    gap: 15px;
+
+    @include desktop {
+        margin-top: 59px;
+        gap: 32px;
+    }
+}
+
+.reviews__alerts-wrapper {
+    margin-top: 44px;
+    display: grid;
+    gap: 16px;
+
+    @include desktop {
+        margin-top: 45px;
+        grid-template-columns: calc(1fr * 2/3) 1fr;
+        gap: 28px;
+    }
+}
+
+.reviews__alerts {
+    padding: 14px 21px;
+
+    border-radius: 10px;
+    background-color: #eaebed;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary);
+
+    @include tablet {
+        padding: 24px 23px 23px;
+        font-size: 20px;
+    }
+
+    /* МОДИФИКАТОРЫ */
+    &--black {
+        background-color: #222;
+    }
+}

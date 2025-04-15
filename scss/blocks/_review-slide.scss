@@ -1,0 +1,14 @@
+.review-slide {
+    padding: 18px 15px;
+
+    border-radius: 9px;
+    background: #eaebed;
+
+    img {
+        border-radius: 10px;
+    }
+
+    @include desktop {
+        border-radius: 10px;
+    }
+}

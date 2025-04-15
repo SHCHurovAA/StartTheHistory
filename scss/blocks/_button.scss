@@ -1,0 +1,56 @@
+.button,
+a.button {
+    display: inline-block;
+
+    padding: 0px 81px;
+
+    min-width: 250px;
+
+    border-radius: 10px;
+    height: 55px;
+    line-height: 55px;
+
+    color: #000;
+    font-weight: 400;
+    background: #fff;
+
+    position: relative;
+
+    &:hover {
+        background: var(--primary);
+    }
+
+    &:active {
+        top: 1px;
+        background: var(--accent);
+    }
+}
+
+
+.button-blue,
+a.button-blue {
+    display: inline-block;
+
+    padding: 0px 81px;
+
+    min-width: 250px;
+
+    border-radius: 10px;
+    height: 55px;
+    line-height: 55px;
+
+    color: #fff;
+    font-weight: 600;
+    background: var(--primary);
+
+    position: relative;
+
+    &:hover {
+        background: var(--accent);
+    }
+
+    &:active {
+        top: 1px;
+        background: var(--accent);
+    }
+}

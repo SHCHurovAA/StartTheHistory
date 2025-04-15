@@ -1,0 +1,43 @@
+.title-1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+
+    @include tablet {
+        font-size: 46px;
+    }
+}
+
+.title-2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.15;
+
+    @include tablet {
+        font-size: 50px;
+    }
+}
+
+.title-3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.title-4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.title-5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+
+    @include tablet {
+        font-size: 20px;
+    }
+}

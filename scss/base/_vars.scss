@@ -1,0 +1,31 @@
+/* Цвета */
+:root {
+    --primary: #598BE0;
+    --accent: #FF671B;
+}
+
+
+/* Контейнеры */
+:root {
+    --container-width: calc(330px + 22px + 22px);
+    --container-padding-x: 22px;
+
+    --laptop-size: 1199px;
+    --tablet-size: 959px;
+    --mobile-size: 599px;
+
+    --container-width-tablet: 768px;
+    --container-padding-tablet-x: 15px;
+
+    --container-width-desktop: 1200px;
+    --container-padding-desktop-x: 15px;
+}
+
+
+/* Семейство шрифтов */
+:root {
+    --font-family: "Suisse Intl", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+    --third-family: "Source Sans Pro", sans-serif;
+    --font3: "Roboto", sans-serif;
+}
